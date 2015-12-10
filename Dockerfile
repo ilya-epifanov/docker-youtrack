@@ -22,7 +22,7 @@ RUN apt-get update \
 RUN groupadd -r youtrack \
  && useradd -r -d /var/lib/youtrack -m -g youtrack youtrack
 
-ENV YOUTRACK_VERSION=6.5.16932
+ENV YOUTRACK_VERSION=6.0.12634
 
 RUN curl -o /var/lib/youtrack/youtrack.jar -SL "http://download.jetbrains.com/charisma/youtrack-${YOUTRACK_VERSION}.jar" \
  && mkdir -p /var/lib/youtrack/teamsysdata /var/lib/youtrack/teamsysdata-backup \
